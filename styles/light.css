@@ -3,10 +3,33 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+  /* Переменные светлой темы */ 
+:root.theme-light {
+  --font-family: 'IBM Plex mono';
+  --bg-color: #FFC2E6;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;  
+  --font-size: 18px;
+}
 
-.page.theme_light {
+/* Остальные стили */
+
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --font-family: 'IBM Plex mono';
+    --bg-color: #FFC2E6;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;  
+    --font-size: 18px;
+  }
+}
+
+
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */ 
+.page.theme_light {
+  color: var(--text-color, #353430);
+  background-color: var(--bg-color, #FFC2E6);
 }

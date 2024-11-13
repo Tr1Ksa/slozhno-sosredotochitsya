@@ -1,11 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --font-family: 'IBM Plex mono';
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --font-size: 18px;
-}
 
 .page {
   display: flex;
@@ -193,9 +186,30 @@
 
 .footer {
   display: block;
+  height: 100vh;
   margin-block-start: 40px;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  left: 340px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .footer__title {
@@ -205,12 +219,27 @@
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 90%;
   color: #db00ff;
-  padding-block-start: 283px;
-  padding-block-end: 285px;
+  padding-block-start: 273px;
+  padding-block-end: 245px;
 }
 
 .section-block-picture h3 {
   margin: 0;
+
+}
+
+a {
+  text-shadow: 1px 1px 0 var(--accent-color, #FF0070);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: ;
+}
+
+a:focus {
+
 }
 
 
