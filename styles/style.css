@@ -141,7 +141,7 @@
 }
 
 .content-section {
-  margin-inline: 10px;
+  padding-inline: 10px;
 }
 
 .title-content {
@@ -158,7 +158,7 @@
   line-height: 130%;
   color: #000028;
 }
-
+/*
 .content-section-block {
   display: grid;
   margin-block-start: 40px;
