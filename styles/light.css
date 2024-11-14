@@ -32,4 +32,10 @@
 .page.theme_light {
   color: var(--text-color, #353430);
   background-color: var(--bg-color, #FFC2E6);
+  background-image: url(../images/cover-image-light.png);
+  --font-family: 'IBM Plex mono';
+  --bg-color: #FFC2E6;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;  
+  --font-size: 18px;
 }

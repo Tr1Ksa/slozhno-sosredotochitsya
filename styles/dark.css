@@ -18,5 +18,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 .page.theme_dark {
-
+  --font-family: 'IBM Plex mono';
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;  
+  --font-size: 18px;
 }
