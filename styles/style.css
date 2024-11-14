@@ -20,11 +20,10 @@
 .header {
   display: grid;
   position: relative;
-  background-image: url(../images/cover-image.png);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: -1;
   margin-block-end: 40px;
 }
 
@@ -98,6 +97,10 @@
   gap: 13px;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .header__theme-menu-button {
   color: var(--accent-color,  #FF0070);
   text-transform: lowercase;
@@ -112,12 +115,14 @@
   border:  1px solid var(--accent-color, #FF0070);
 }
 
+
+
 .header__title {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
-  color: #db00ff;
+  color: var(--title-color);
   margin-block-start: 69px;
 }
 
@@ -208,16 +213,21 @@
 
 a {
   text-shadow: 1px 1px 0 var(--accent-color, #FF0070);
-  text-underline-offset: 3px;
+  text-decoration: none;
+}
+
+a button {
+cursor: pointer;
 }
 
 a:hover {
-  cursor: pointer;
-  background-color: ;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 a:focus {
-
+  text-decoration: none;
+  border:  1px solid;
 }
 
 
@@ -256,7 +266,6 @@ a:focus {
     display: grid;
     flex-direction: row;
   }
-  
 }
 
 @media (min-width: 1024px) {
