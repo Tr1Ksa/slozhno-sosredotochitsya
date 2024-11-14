@@ -2,8 +2,9 @@
   /* Переменные светлой темы */ 
 :root.theme-light {
   --font-family: 'IBM Plex mono';
-  --bg-color: #FFC2E6;
+  --bg-color: #fff1f7;
   --text-color: #353430;
+  --theme-color: #353430;
   --accent-color: #FF8DCB; 
   --title-color: #FFC2E6;
   --background-image: url(../images/cover-image-light.png);
@@ -14,17 +15,17 @@
   background-color: var(--bg-color, #FFC2E6);
   --background-image: url(../images/cover-image-light.png);
   --font-family: 'IBM Plex mono';
-  --bg-color: #FFC2E6;
+  --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #FF8DCB;  
   --title-color: #FFC2E6;
 }
-
+/*
 .block__heading,
 .header__theme-menu-button {
-  color: var(--text-color);
-}
-
+  color: var(--theme-color, #353430);
+}*/
+/*
 .decorative-corner::before {
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
@@ -36,9 +37,9 @@
 }
 
 .header__theme-menu-button_active {
-  border:  1px solid var(--text-color, #353430);
+  border: 1px solid var(--text-color, #353430);
 }
 
 .rec {
-  display: none;
+  visibility: hidden;
 }
