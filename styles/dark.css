@@ -1,18 +1,12 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-  /* Дублируем переменные для тёмной темы */
+ /* Дублируем переменные для тёмной темы */
  :root.page.theme_dark {
-  --font-family: 'IBM Plex mono';
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070; 
-  --title-color: #DB00FF; 
-  --font-size: 18px;
-  --background-image: url(../images/cover-image-dark.png);
+   --font-family: 'IBM Plex mono';
+   --bg-color: #000028;
+   --text-color: #F1B2CE;
+   --accent-color: #FF0070; 
+   --title-color: #DB00FF; 
+   --font-size: 18px;
+   --background-image: url(../images/cover-image-dark.png);
 }
 
   /* сохраните этот селектор в приведённом виде.

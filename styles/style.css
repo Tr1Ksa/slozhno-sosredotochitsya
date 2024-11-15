@@ -228,7 +228,7 @@ ul h3 {
 
 a {
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-color, #FF0070);
+  text-shadow: 3px 2px 0 var(--accent-color, #FF0070);
 }
 
 a button {
@@ -294,12 +294,12 @@ a:focus {
   }
   .reduced-concentration-block h2 {
     padding-inline-end: 502px;
-
-
-  .section-block-goldfish {
-   
   }
+  .section-block-goldfish ul {
+    margin-block-start: 0;
+    
 
+  }
 }
 
 @media (min-width: 1024px) {
@@ -340,10 +340,15 @@ a:focus {
   }
   .reduced-concentration-block {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
-  
+  .reduced-concentration-block h2 {
+    padding-inline-end: 679px;
+    margin: 0;
+  }
+  .reduced-concentration-block ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
- 
 }
