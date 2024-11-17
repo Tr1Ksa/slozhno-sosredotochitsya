@@ -22,8 +22,8 @@
   position: relative;
   display: grid;
   margin-block-end: 40px;
-  min-height: 100vh;
-  min-block-size: 668px;
+  height: 100vh;
+  grid-template-rows: 28px min-content 1fr;
 }
 /*
 .decorative-corner::before {
@@ -95,7 +95,7 @@
   content: "";
   position: absolute;
   top: 7px;
-  right: -7px; /* Смещение точки относительно надписи */
+  right: -7px; 
   z-index: 1;
   display: block;
   width: 9px;
@@ -103,14 +103,14 @@
   border-radius: 100%;
   box-shadow: 0 0 4px 2px #ff0070;
   color: var(--accent-color);
-  background-color: var(--accent-color); /* Цвет точки в тёмной теме */
-}
+  background-color: var(--accent-color);
+} 
 
 .header__theme-menu {
   min-width: 70px;
   max-height: 98px;
   margin-inline-start: 285px;
-  margin-block-start: 39px;
+  margin-block-start: 36px;
 }
 
 .header__theme-menu-list {
