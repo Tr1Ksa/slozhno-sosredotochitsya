@@ -10,7 +10,7 @@
   color: var(--text-color, #F1B2CE);
   font-family: var(--font-family, sans-serif);
   font-size: 18px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #000028);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;

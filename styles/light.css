@@ -1,5 +1,3 @@
-
-  /* Переменные светлой темы */ 
 :root.theme-light {
   --font-family: 'IBM Plex mono';
   --bg-color: #fff1f7;
@@ -28,13 +26,7 @@
   .block__heading {
     color: var(--menu-color);
   }
-}
-
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--text-color, #353430);
-}
-
-.rec {
-  visibility: hidden;
+  .rec {
+    visibility: hidden;
+  }
 }
