@@ -22,15 +22,11 @@
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
   }
- 
   .decorated-zone {
     border-color: var(--menu-color);
   }
   .block__heading {
     color: var(--menu-color);
-  }
-  .footer__title {
-
   }
 }
 

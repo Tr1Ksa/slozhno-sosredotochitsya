@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
   color: var(--text-color, #F1B2CE);
@@ -48,6 +47,7 @@
 }*/
 
 .decorated-zone {
+  position: relative;
   display: grid;
   padding: 10px;
 }
@@ -70,8 +70,8 @@
   border-block-end: 1px solid var(--menu-color);
   inline-size: 25px;
   block-size: 25px;
-  inset-inline-end: 340px;
-  inset-block-start: 633px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .rec {
@@ -129,19 +129,18 @@
   cursor: pointer;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--menu-color);
+}
+
 .header__theme-menu-button:focus {
   border: none;
   text-decoration: underline ;
 }
 
-.header__theme-menu-button:hover {
-  border: 1px solid var(--menu-color);
-}
-
 .header__theme-menu-button_active {
   box-sizing: border-box;
-  border: 1px solid transparent;
-  border-color: var(--menu-color);
+  border: 1px solid var(--menu-color, #FF0070);
   padding: 1.5px 13px 4px;
   pointer-events: none;
 }
@@ -243,6 +242,16 @@ ul h3 {
   text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
 }
 
+.footer .decorated-zone::before {
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.footer .decorated-zone::after {
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
 a {
   text-decoration: none;
   text-shadow: 3px 2px 0 var(--accent-color, #FF0070);
@@ -253,8 +262,7 @@ cursor: pointer;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  border-bottom: 1px solid currentColor;
 }
 
 a:focus {
@@ -295,8 +303,8 @@ a:focus {
     inset-block-start: 20px;
   }
   .decorated-zone::after {
-    inset-inline-end: 722px;
-    inset-block-start: 979px;
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
   }
   .content-section {
     gap: 80px;
