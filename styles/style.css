@@ -12,9 +12,9 @@
   font-size: 18px;
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -234,10 +234,10 @@ ul h3 {
 
 .footer__title {
   display: grid;
+  margin-bottom: 10px;
   padding-inline-start: 3px;
   padding-block-start: 273px;
   padding-block-end: 245px;
-  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
