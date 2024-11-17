@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  display: block;
+  display: grid;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -55,8 +55,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--menu-color);
+  border-block-start: 1px solid var(--menu-color);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-end: 10px;
@@ -66,8 +66,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--menu-color);
+  border-block-end: 1px solid var(--menu-color);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-end: 340px;
@@ -120,7 +120,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 1.5px 13px 1.5px;
-  color: var(--accent-color, #FF0070);
+  color: var(--menu-color, #FF0070);
   font-weight: 400;
   line-height: 100%;
   text-align: center;
@@ -135,20 +135,20 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-color);
 }
 
 .header__theme-menu-button_active {
   box-sizing: border-box;
   border: 1px solid transparent;
-  border-color: var(--accent-color);
+  border-color: var(--menu-color);
   padding: 1.5px 13px 4px;
   pointer-events: none;
 }
 
 .header__title {
   margin-block-start: 69px;
-  color: var(--title-color);
+  color: var(--title-color, #DB00FF);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
@@ -236,7 +236,7 @@ ul h3 {
   padding-inline-start: 3px;
   padding-block-start: 273px;
   padding-block-end: 245px;
-  color: #db00ff;
+  color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 90%;
@@ -264,7 +264,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .rec {
-    margin-inline-start: 89%;
+    margin-inline-start: 679px;
   }
   .header {
     margin-block-end: 60px;
@@ -288,7 +288,15 @@ a:focus {
     margin-block-end: 184px;
   }
   .decorated-zone {
-    padding: 20px 10px 0 0;
+    padding: 20px 20px 0 0;
+  }
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  .decorated-zone::after {
+    inset-inline-end: 722px;
+    inset-block-start: 979px;
   }
   .content-section {
     gap: 80px;
@@ -342,7 +350,7 @@ a:focus {
   .footer__title {
     display: grid;
     place-content: center;
-    margin-inline-start: 5px;
+    margin-inline-start: 12px;
     margin-block-start: 186px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
