@@ -15,15 +15,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
+  background-size: cover;
 }
 
 .header {
   position: relative;
   display: grid;
-  margin-block-end: 40px;
+  grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  grid-template-rows: 28px min-content 1fr;
+  margin-block-end: 40px;
 }
 /*
 .decorative-corner::before {
@@ -110,7 +110,7 @@
   min-width: 70px;
   max-height: 98px;
   margin-inline-start: 285px;
-  margin-block-start: 36px;
+  margin-block-start: 39px;
 }
 
 .header__theme-menu-list {
@@ -144,11 +144,11 @@
   border: 1px solid transparent;
   border-color: var(--accent-color);
   padding: 1.5px 13px 4px;
-  pointer-events: noneж
+  pointer-events: none;
 }
 
 .header__title {
-  margin-block-start: 67px;
+  margin-block-start: 69px;
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -214,9 +214,9 @@ ul h3 {
 }
 
 .gallery img {
+  min-height: 100%;
   object-fit: cover;
   inline-size: 100%;
-  min-height: 100%;
 }
 
 .section-block-picture h3 {
@@ -234,9 +234,9 @@ ul h3 {
 
 .footer__title {
   display: grid;
+  padding-inline-start: 3px;
   padding-block-start: 273px;
   padding-block-end: 245px;
-  padding-inline-start: 3px;
   color: #db00ff;
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
@@ -313,9 +313,9 @@ a:focus {
     display: block;
   }
   .gallery__image {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   .gallery {
     display: grid;
@@ -343,8 +343,8 @@ a:focus {
   .footer__title {
     display: grid;
     place-content: center;
-    margin-block-start: 186px;
     margin-inline-start: 5px;
+    margin-block-start: 186px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
@@ -357,8 +357,8 @@ a:focus {
   }
   .header__theme-menu-list {
     display: flex;
-    align-content: center;
     justify-content: space-between;
+    align-content: center;
   }
   .header__theme-menu {
     position: absolute;
@@ -406,8 +406,8 @@ a:focus {
   .footer__title {
     display: grid;
     place-content: center;
-    margin-block-start: 41px;
     margin-inline-start: 5px;
+    margin-block-start: 41px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
