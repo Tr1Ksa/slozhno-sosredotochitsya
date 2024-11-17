@@ -13,7 +13,8 @@
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  
+  background-position: center;
 }
 
 .header {
@@ -227,6 +228,7 @@ ul h3 {
   align-items: center;
   height: 100vh;
   margin-block-start: 40px;
+  margin-block-end: 10px;
   padding-top: 10px;
 }
 
@@ -235,6 +237,7 @@ ul h3 {
   padding-inline-start: 3px;
   padding-block-start: 273px;
   padding-block-end: 245px;
+  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
