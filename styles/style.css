@@ -358,21 +358,18 @@ a:focus {
 }
 
 @media (min-width: 1024px) {
-  .rec {
-    position: relative;
-    z-index: -2;
-    margin-inline-start: 85%;
-  }
   .header__theme-menu-list {
     display: flex;
     justify-content: space-between;
     align-content: center;
   }
   .header__theme-menu {
+    display: grid;
+    justify-content: center;
     position: absolute;
     max-width: 230px;
     max-height: 26px;
-    margin-inline-start: 392px;
+    margin-inline-start: 399px;
     margin-block-start: 20px;
   }
   .header__title {
