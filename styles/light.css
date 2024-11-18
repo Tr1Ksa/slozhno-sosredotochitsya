@@ -1,4 +1,4 @@
-:root.theme-light {
+:root {
   --font-family: 'IBM Plex mono';
   --bg-color: #fff1f7;
   --text-color: #353430;
@@ -10,7 +10,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     --font-family: 'IBM Plex mono';
     --bg-color: #fff1f7;
     --text-color: #353430;
@@ -21,7 +21,7 @@
     --background-image: url(../images/cover-image-light.png);
   }
 }
-
+/*
 .page.theme_light {
   color: var(--text-color, #353430);
   background-color: var(--bg-color, #FFC2E6);
@@ -32,7 +32,7 @@
   --menu-color: #353430;
   --accent-color: #FF8DCB;
   --title-color: #FFC2E6;
-}
+}*/
 
 .decorated-zone {
   border-color: var(--menu-color);
