@@ -19,4 +19,17 @@
     --title-color: #DB00FF;
     --font-size: 18px;
   }
+  
 }
+
+.page.theme_dark {
+  --font-family: 'IBM Plex mono';
+  --background-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --menu-color: #FF0070;
+  --title-color: #DB00FF;
+  --font-size: 18px;
+}
+
