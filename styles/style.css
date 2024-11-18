@@ -35,8 +35,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-inline-end: 1px solid var(--menu-color);
-  border-block-start: 1px solid var(--menu-color);
+  border-inline-end: 1px solid var(--menu-color, #FF0070);
+  border-block-start: 1px solid var(--menu-color, #FF0070);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-end: 10px;
@@ -46,8 +46,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-inline-start: 1px solid var(--menu-color);
-  border-block-end: 1px solid var(--menu-color);
+  border-inline-start: 1px solid var(--menu-color, #FF0070);
+  border-block-end: 1px solid var(--menu-color, #FF0070);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-start: 10px;
@@ -80,9 +80,9 @@
   width: 9px;
   height: 9px;
   border-radius: 100%;
-  box-shadow: 0 0 4px 2px #ff0070;
-  color: var(--accent-color);
-  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color, #FF0070);
+  color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #FF0070);
 } 
 
 .header__theme-menu {
@@ -111,7 +111,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-color);
+  border: 1px solid var(--menu-color, #FF0070);
 }
 
 .header__theme-menu-button:focus {
@@ -165,7 +165,7 @@
 
 .block__heading {
   margin-block-end: 20px;
-  color: var(--accent-color);
+  color: var(--accent-color, #FF0070);
   font-weight: 700;
   font-size: 18px;
 }
