@@ -115,7 +115,7 @@
 
 .header__theme-menu-button:focus {
   border: none;
-  text-decoration: underline ;
+  text-decoration: underline;
 }
 
 .header__theme-menu-button_active {
