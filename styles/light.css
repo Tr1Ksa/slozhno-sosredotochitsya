@@ -8,7 +8,7 @@
   --title-color: #FFC2E6;
   --background-image: url(../images/cover-image-light.png);
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .page.theme_light {
     color: var(--text-color, #353430);
     background-color: var(--bg-color, #FFC2E6);
