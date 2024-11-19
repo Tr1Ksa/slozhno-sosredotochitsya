@@ -140,11 +140,15 @@
 }
 
 .title-decor {
-  color: #000028;
+  color: var( --main-heading-color);
   font-family: var(--font-family, 'IBM Plex mono');
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--font-size);
   background-color: var(--accent-color);
+}
+
+.section-block-goldfish h3 {
+  font-weight: 400;
 }
 
 .content-section {
