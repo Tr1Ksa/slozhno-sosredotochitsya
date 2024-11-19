@@ -11,4 +11,11 @@
  --header-logo-color: #DB00FF;
  --footer-logo-color: #DB00FF;
  --hover-color: rgba(255, 0, 112, 0.4);
+ --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
+
+@media (width >= 768px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+} 
