@@ -389,18 +389,20 @@ a:focus-visible {
     margin-block-start: 20px;
   }
   .header__title {
-    margin-inline-start: 0px;
-    margin-block-start: 275px;
-    margin-block-end: 0;
+    margin: 0;
+    margin-block-start: 162px;
+    margin-block-end: 114px;
     font-size: 157px;
-    line-height: 83%;
+    line-height: 83%; 
+  }
+  .title-text {
+    display: grid;
+    grid-template-columns: 1fr auto;
   }
   .title-content {
+    grid-column: 2/2;
     max-width: 491px;
-    max-height: 71px;
-    margin-inline-start: 513px;
-    margin-block-start: 114px;
-    margin-block-end: 134px;
+    margin: 0;
   }
   .content-section-block {
     display: grid;
