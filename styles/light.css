@@ -10,11 +10,11 @@
   --title-color: #FFC2E6;
 }
 
-.decorated-zone {
+.theme_light.decorated-zone {
   border-color: var(--menu-color);
 }
 
-.block__heading {
+.theme_light.block__heading {
   color: var(--menu-color);
 }
 
@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --font-family: 'IBM Plex mono';
     --bg-color: #fff1f7;
     --text-color: #353430;
@@ -43,4 +43,7 @@
     display: none;
   }
 }
+
+
+
 
