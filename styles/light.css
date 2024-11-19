@@ -9,8 +9,6 @@
   --section-heading-color: #353430;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
-  color: var(--text-color, #353430);
-  background-color: var(--bg-color, #FFC2E6);
   --main-heading-color: #353430;
 }
 
@@ -24,7 +22,6 @@
     --font-family: 'IBM Plex mono';
     --bg-color: #fff1f7;
     --text-color: #353430;
-    --theme-color: #353430;
     --menu-color: #353430;
     --accent-color: #FF8DCB;
     --background-image: url(../images/cover-image-light.png);
