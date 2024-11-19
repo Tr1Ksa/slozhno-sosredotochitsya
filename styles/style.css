@@ -141,7 +141,7 @@
 
 .title-decor {
   color: #000028;
-  font-family: var(--font-family,  'IBM Plex mono');
+  font-family: var(--font-family, 'IBM Plex mono');
   font-weight: 700;
   font-size: 18px;
   background-color: var(--accent-color);
@@ -348,9 +348,9 @@ a:focus {
     align-content: center;
   }
   .header__theme-menu {
+    position: absolute;
     display: grid;
     justify-content: center;
-    position: absolute;
     max-width: 230px;
     max-height: 26px;
     margin-inline-start: 399px;

@@ -4,7 +4,6 @@
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --menu-color: #FF0070;
-  --title-color: #DB00FF;
   --font-size: 18px;
   --section-heading-color: #FF0070;
   --header-logo-color: #DB00FF;
@@ -12,47 +11,5 @@
 }
 
 .page.theme_dark .rec {
-  display: grid;
-}
-
-
-
-/*
-
-:root.theme_dark {
-   --font-family: 'IBM Plex mono';
-   --bg-color: #000028;
-   --text-color: #F1B2CE;
-   --accent-color: #FF0070;
-   --title-color: #DB00FF;
-   --font-size: 18px;
-   --background-image: url(../images/cover-image-dark.png);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page.theme_dark {
-    --font-family: 'IBM Plex mono';
-    --background-image: url(../images/cover-image-dark.png);
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --menu-color: #FF0070;
-    --title-color: #DB00FF;
-    --font-size: 18px;
-  }
-}
-
-.page.theme_dark {
-  --font-family: 'IBM Plex mono';
-  --background-image: url(../images/cover-image-dark.png);
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --menu-color: #FF0070;
-  --title-color: #DB00FF;
-  --font-size: 18px;
-}
-
-.rec {
   display: grid;
 }
