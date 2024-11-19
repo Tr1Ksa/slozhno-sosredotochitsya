@@ -1,11 +1,9 @@
 .page.theme_light {
   --background-image: url(../images/cover-image-light.png);
-  --font-family: 'IBM Plex mono';
   --bg-color: #fff1f7;
   --text-color: #353430;
   --menu-color: #353430;
   --accent-color: #FF8DCB;
-  --font-size: 18px;
   --section-heading-color: #353430;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
@@ -19,8 +17,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --font-size: 18px;
-    --font-family: 'IBM Plex mono';
     --bg-color: #fff1f7;
     --text-color: #353430;
     --menu-color: #353430;
