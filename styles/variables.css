@@ -1,5 +1,5 @@
 :root {
- --font-family: 'IBM Plex mono';
+ --font-family: 'IBM Plex mono', regular;
  --bg-color: #000028;
  --text-color: #F1B2CE;
  --accent-color: #FF0070;
@@ -7,4 +7,7 @@
  --font-size: 18px;
  --title-color: #DB00FF;
  --background-image: url(../images/cover-image-dark.png);
+ --section-heading-color: #FF0070;
+ --header-logo-color: #DB00FF;
+ --footer-logo-color: #DB00FF;
 }
