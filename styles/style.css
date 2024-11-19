@@ -249,13 +249,11 @@ a:hover {
 a:focus {
   outline: 1px solid var(--text-color);
   text-decoration: none;
-
 }
 
 a:focus-visible {
   outline: 1px solid var(--text-color);
   text-decoration: none;
- 
 }
 
 @media (min-width: 768px) {
@@ -278,9 +276,9 @@ a:focus-visible {
   }
   .title-content {
     max-width: 364px;
-    max-height: 117px;
+   /* max-height: 117px;*/
     margin-inline-start: 384px;
-    margin-block-start: -2px;
+   /* margin-block-start: -2px;*/
     margin-block-end: 184px;
   }
   .decorated-zone {
@@ -302,12 +300,25 @@ a:focus-visible {
     display: grid;
     gap: 20px;
   }
-  .reduced-concentration-block {
+  /*.reduced-concentration-block {
     display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: px;
+  }*/
+  .block__heading {
+    margin: 0;
   }
   .reduced-concentration-block h2 {
-    padding-inline-end: 502px;
+    /*padding-inline-end: 502px;*/
+    grid-column: 1 / 2;
+    grid-row: 2 span;
   }
+  .reduced-concentration-block .text-blocks {
+    grid-column: 1 / -1;
+    grid-row: 2 span;
+  }
+
   .section-block-goldfish {
     display: grid;
     grid-template-columns: 1fr 2fr ;
