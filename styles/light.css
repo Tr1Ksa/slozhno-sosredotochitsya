@@ -14,7 +14,7 @@
 }
 
 .theme_light .rec {
-  display: none;
+  visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,7 +35,7 @@
     border-color: var(--menu-color);
   }
   .rec {
-    display: none;
+    visibility: hidden;
   }
 }
 
