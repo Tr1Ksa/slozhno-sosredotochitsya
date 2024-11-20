@@ -162,11 +162,6 @@
   display: grid;
   gap: 50px;
 }
-
-.text-block__heading {
-  margin-bottom: 20px;
-}
-
 .content-section-block {
   grid-template-columns: 1fr 2fr;
   line-height: 130%;
@@ -337,12 +332,13 @@ a:focus-visible {
   .text-blocks h3 {
     margin-top: 0;
   }
-  .section-block-goldfish .text-blocks{
+  .section-block-goldfish .text-blocks {
     gap: 0; 
   }
   .section-block-goldfish .text-block__heading {
     margin: 0;
   }
+  
   .section-block-picture {
     display: block;
   }
@@ -405,7 +401,6 @@ a:focus-visible {
     position: relative;
     display: grid;
     justify-content: center;
-    margin: 0;
     max-width: 230px;
     max-height: 26px;
     margin: auto;
