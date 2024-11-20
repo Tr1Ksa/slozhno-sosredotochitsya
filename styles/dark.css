@@ -12,5 +12,5 @@
 }
 
 .page.theme_dark .rec {
-  display: grid;
+  visibility: visible;
 }
