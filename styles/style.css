@@ -86,7 +86,6 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  /*min-width: 70px;*/
   margin-block-start: 39px;
 }
 
@@ -117,7 +116,6 @@
 }
 
 .header__theme-menu-button:focus-visible {
- /* outline: 1px solid var(--hover-color);*/
   outline: none;
   text-decoration: none;
   border: none;
@@ -125,9 +123,9 @@
 }
 
 .header__theme-menu-button_active {
-  box-sizing: border-box;
-  border: 1px solid var(--menu-color);
   pointer-events: none;
+  outline: 1px solid var(--menu-color);
+  padding: 1.5px 13px 4px;
 }
 
 .header__title {
@@ -358,11 +356,10 @@ a:focus-visible {
   .rec {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 23px;
   }
   .header {
     grid-template-rows: 26px 1fr;
-    
   }
   .header__theme-menu-list {
     display: flex;
@@ -374,11 +371,9 @@ a:focus-visible {
     display: grid;
     justify-content: center;
     max-width: 230px;
-    max-height: 26px;
+    bottom: 1px;
+    left: 11px;
     margin: auto;
-  }
-  .header__theme-menu-button{
-
   }
   .header__title {
     margin: 0;
