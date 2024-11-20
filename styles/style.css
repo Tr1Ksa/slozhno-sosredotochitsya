@@ -54,10 +54,10 @@
 
 .rec {
   position: relative;
+  right: 2px;
   display: grid;
   justify-content: end;
   margin-inline-end: 25px;
-  right: 2px;
 }
 
 .rec p {
@@ -116,16 +116,16 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
-  text-decoration: none;
   border: none;
   border-bottom: 1px solid;
+  outline: none;
+  text-decoration: none;
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
-  outline: 1px solid var(--menu-color);
   padding: 1.5px 13px 4px;
+  outline: 1px solid var(--menu-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -161,8 +161,8 @@
 
 .content-section-block {
   grid-template-columns: 1fr 2fr;
-  line-height: 130%;
   gap: 20px;
+  line-height: 130%;
 }
 
 .content-section__title {
@@ -368,11 +368,11 @@ a:focus-visible {
   }
   .header__theme-menu {
     position: relative;
+    bottom: 1px;
+    left: 11px;
     display: grid;
     justify-content: center;
     max-width: 230px;
-    bottom: 1px;
-    left: 11px;
     margin: auto;
   }
   .header__title {
