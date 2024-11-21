@@ -414,7 +414,7 @@ a:focus-visible {
   /*.reduced-concentration-block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);*/
-  }
+  
   .reduced-concentration-block .text-blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
