@@ -400,7 +400,6 @@ a:focus-visible {
   }
   .content-section-block {
     display: grid;
-   /* grid-template-columns: 315px 1fr;*/
    grid-template-columns: repeat(3, 1fr);
   }
   .content-section-block h2 {
@@ -411,10 +410,6 @@ a:focus-visible {
     grid-column: 2 / -1;
     grid-row: 1 / 4;
   }
-  /*.reduced-concentration-block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);*/
-  
   .reduced-concentration-block .text-blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
