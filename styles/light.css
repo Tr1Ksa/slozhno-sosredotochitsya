@@ -26,7 +26,7 @@
     --header-logo-color: #FFC2E6;
     --footer-logo-color: #FFC2E6;
     --main-heading-color: #353430;
-    --hover-color: #32312D;
+    --hover-color: rgb(50 49 45 / 0.4);
   }
   .decorated-zone {
     border-color: var(--menu-color);

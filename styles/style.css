@@ -18,7 +18,9 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 26px min-content 1fr;
+  /*grid-template-rows: 26px min-content 1fr;*/
+ /* grid-template-rows: repeat(2, min-content) 1fr;*/
+  grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   min-height: 668px;
   margin-block-end: 40px;
@@ -28,7 +30,6 @@
 .decorated-zone {
   position: relative;
   display: grid;
- /* padding: 10px;*/
 }
 
 .decorated-zone::before {
@@ -109,6 +110,7 @@
 
 .header__theme-menu-button:hover {
  border: 1px solid var(--hover-color);
+ padding: 1.5px 13px 4px;
 }
 
 .header__theme-menu-button:focus {
@@ -206,23 +208,18 @@ p:not(:last-child) {
 }
 
 .footer {
-  /*display: block;*/
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /*min-height: 668px;*/
   margin-block-start: 40px;
   padding: 0;
 }
 
 .footer__title {
   display: grid;
- /* margin-bottom: 10px;*/
   padding-inline-start: 3px;
   vertical-align: middle;
-  /*padding-block-start: 273px;
-  padding-block-end: 245px;*/
   color: var( --footer-logo-color);
   font-weight: 700;
   font-size: var(--logo-size);
@@ -277,9 +274,6 @@ a:focus-visible {
     display: grid;
     grid-template-columns: 1fr auto;
   }
-  /*.decorated-zone {
-    padding: 20px 20px 0 0;
-  }*/
   .decorated-zone::before {
     inset-inline-end: 20px;
     inset-block-start: 20px;
@@ -370,12 +364,14 @@ a:focus-visible {
     right: 23px;
   }
   .header {
-    grid-template-rows: 26px 1fr;
+    /*grid-template-rows: 26px 1fr;*/
+    grid-template-rows: min-content 1fr;
   }
   .header__theme-menu-list {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    gap: 10px;
   }
   .header__theme-menu {
     position: relative;
