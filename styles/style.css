@@ -400,15 +400,17 @@ a:focus-visible {
   }
   .content-section-block {
     display: grid;
-    grid-template-columns: 315px 1fr;
+   /* grid-template-columns: 315px 1fr;*/
   }
   .reduced-concentration-block {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   .reduced-concentration-block h2 {
-    margin: 0;
-    padding-inline-end: 679px;
+    grid-column: 1 / 1;
+    grid-row: 2 span;
+    
+   /* padding-inline-end: 679px;*/
   }
   .reduced-concentration-block .text-blocks {
     display: grid;
